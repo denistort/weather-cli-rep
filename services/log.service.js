@@ -4,8 +4,8 @@ export const printError = (error) => {
     console.log(chalk.bgRed('ERROR. 👹👹👹') + error)
 }
 
-export const printSucces = (error) => {
-    console.log(chalk.bgGreen('Succes. 😘') + error)
+export const printSucces = (text) => {
+    console.log(chalk.bgGreen('Succes. 😘') + text)
 }
 
 export const printHelp = () => {
