@@ -1,11 +1,11 @@
 import chalk from 'chalk'
 import dedent from 'dedent-js'
 export const printError = (error) => {
-    console.log(chalk.bgRed('ERROR. 👹👹👹') + error)
+    console.log(chalk.bgRed('  ERROR  ') + error)
 }
 
 export const printSucces = (text) => {
-    console.log(chalk.bgGreen('Succes. 😘') + text)
+    console.log(chalk.bgGreen(' SUCCES ') + text)
 }
 
 export const printHelp = () => {
