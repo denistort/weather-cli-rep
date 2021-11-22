@@ -2,11 +2,14 @@
     "name": "weather-cli-a",
     "version": "1.0.0",
     "description": "CLI for getting weather",
-    "main": "index.js",
-    "bin": "./index.js",
+    "main": "weather.js",
+    "bin": {
+        "weather": "weather.js"
+    },
+    "type": "module",
     "funding": "www",
-
     "scripts": {
+        "start": "node weather.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -23,5 +26,10 @@
     "bugs": {
         "url": "https://github.com/denistort",
         "email": "denismakste@gmail.com"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "chalk": "^4.1.2",
+        "dedent-js": "^1.0.1"
     }
 }
