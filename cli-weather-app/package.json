@@ -15,13 +15,13 @@
     ],
     "author": "Denis Korablev",
     "license": "ISC",
-    "homepage": "www.www.ru",
+    "homepage": "https://github.com/denistort",
     "repository": {
         "type": "git",
-        "url": "purpleAss.com"
+        "url": "https://github.com/denistort/weather-cli-rep"
     },
     "bugs": {
-        "url": "https://www.www.ru",
+        "url": "https://github.com/denistort",
         "email": "denismakste@gmail.com"
     }
 }
