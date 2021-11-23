@@ -37,7 +37,6 @@ const showingWeather = async() => {
     getForecast(city);
 }
 const initCLI = () => {
-    console.log(process.env.PORT)
     const args = getArgs(process.argv);
     if (args.t) {
         return saver("token", args.t);
