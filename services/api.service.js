@@ -2,7 +2,7 @@ import { getKeyValue } from "./storage.service.js";
 import axios from "axios";
 
 export const getWeather = async(city) => {
-    const token = await getKeyValue('token');
+    const token = await getKeyValue('token') || process.env.TOKEN;
     // console.log(process.env)
     if (!token) {
         throw new Error('We dont have a APIKEY pls give a APIKEY -t [API_KEY]')

@@ -28,7 +28,7 @@ const getForecast = async(city) => {
 
 }
 const getCity = async() => {
-    const city = await getKeyValue('city');
+    const city = await getKeyValue('city') || process.env.CITY;
     return city;
 }
 
@@ -37,6 +37,7 @@ const showingWeather = async() => {
     getForecast(city);
 }
 const initCLI = () => {
+    console.log(process.env.PORT)
     const args = getArgs(process.argv);
     if (args.t) {
         return saver("token", args.t);

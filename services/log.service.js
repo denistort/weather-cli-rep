@@ -48,7 +48,6 @@ const getIcon = (icon) => {
     }
 }
 export const printWeather = (weather) => {
-    console.log(weather)
     console.log(dedent `
 	-------------------------------------
 	City: ${weather.name}
